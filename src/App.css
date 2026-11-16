@@ -1,0 +1,106 @@
+/* A CSS class selector targets every element with className="dashboard". */
+.dashboard {
+  /* `min()` chooses the smaller of these two widths. */
+  width: min(900px, 100%);
+  /* `0 auto` centers a block horizontally when it has a limited width. */
+  margin: 0 auto;
+  /* Padding creates space inside an element, around its content. */
+  padding: 48px 24px;
+  /* Padding and borders are included in the declared width. */
+  box-sizing: border-box;
+  /* Aligns text and inline content to the left. */
+  text-align: left;
+}
+
+.dashboard-header {
+  /* Margin creates space outside an element. */
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dashboard-header h1 {
+  margin: 8px 0;
+  color: #0f172a;
+  font-size: 2.5rem;
+}
+
+.dashboard-header p {
+  color: #475569;
+}
+
+.controls,
+.price-summary,
+.price-history,
+.prediction-placeholder {
+  /* A comma-separated selector applies these declarations to every listed class. */
+  margin-bottom: 24px;
+  padding: 24px;
+  /* `1px solid` means a one-pixel, continuous border. */
+  border: 1px solid #e2e8f0;
+  /* Rounds the corners of the boxes. */
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.controls {
+  /* Flexbox lays the label and select out in a row. */
+  display: flex;
+  /* Aligns the children along the cross-axis. */
+  align-items: center;
+  /* Places the first child at the start and the second at the end. */
+  justify-content: space-between;
+  /* Adds space between flex children. */
+  gap: 16px;
+}
+
+select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  /* Inherits the font settings from the surrounding element. */
+  font: inherit;
+}
+
+.price-summary strong {
+  /* Makes the strong element occupy its own line. */
+  display: block;
+  margin: 8px 0;
+  color: #0f766e;
+  font-size: 2.5rem;
+}
+
+.price-summary span {
+  color: #64748b;
+}
+
+.price-history h2,
+.prediction-placeholder h2 {
+  /* Removes the browser's default top margin from these headings. */
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.price-list {
+  border-top: 1px solid #e2e8f0;
+}
+
+.price-row {
+  /* Places the date and price at opposite sides of the row. */
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  /* Adds a separator below each price row. */
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.prediction-placeholder {
+  /* A slightly different background visually marks this unfinished feature. */
+  background: #f8fafc;
+}
