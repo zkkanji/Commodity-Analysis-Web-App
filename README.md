@@ -1,2 +1,2 @@
 # Commodity-Analysis-Web-App
-Web dev project with mix of data science to track and predict future everyday good prices.
+Web dev project with mix of data science to track and predict future everyday good prices. I intend on using React and other web development based technologies to make this project come to life. I also want to implement AI into the project using and OpenRouter API. This web app is supposed to analyze and graph out prior commodity pricing and establish future pricing predictions based on the given trends. For the pricing data I intend to use an API such as Openpriceengine to get up-to-date pricing data on groceries and more. I also intend on using Tailwind CSS for the site aesthetics. 
